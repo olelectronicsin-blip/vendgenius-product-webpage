@@ -96,7 +96,14 @@ export default function Footer() {
           {/* Powered By */}
           <div>
             <h4 className="text-lg font-bold mb-4">Powered By</h4>
-            <p className="text-teal-400 font-semibold text-xl mb-2">OLatus</p>
+            <a
+              href="https://olatus.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-400 font-semibold text-xl mb-2 inline-block hover:text-teal-300 transition-colors"
+            >
+              OLatus
+            </a>
             <p className="text-gray-400 mb-4">
               Advanced IoT solutions for modern vending automation and smart business technology.
             </p>
