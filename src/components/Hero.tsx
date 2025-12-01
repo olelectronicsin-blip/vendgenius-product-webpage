@@ -5,11 +5,17 @@ export default function Hero() {
     const demoSection = document.getElementById('request-demo');
     if (demoSection) {
       demoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Open form after scroll animation completes
       setTimeout(() => {
         const openFormEvent = new CustomEvent('openDemoForm');
         window.dispatchEvent(openFormEvent);
       }, 800);
+    }
+  };
+
+  const scrollToFeatures = () => {
+    const featuresSection = document.getElementById('features');
+    if (featuresSection) {
+      featuresSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
@@ -51,7 +57,7 @@ export default function Hero() {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <button 
-                onClick={scrollToDemo}
+                onClick={scrollToFeatures}
                 className="bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg border-2 border-gray-200 hover:border-teal-600 hover:shadow-lg transition-all duration-300"
               >
                 Get Started

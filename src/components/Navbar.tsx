@@ -21,17 +21,9 @@ export default function Navbar() {
     }
   };
 
-  const scrollToDemo = () => {
-    const demoSection = document.getElementById('request-demo');
-    if (demoSection) {
-      demoSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setIsMobileMenuOpen(false);
-      // Open form after scroll animation completes
-      setTimeout(() => {
-        const openFormEvent = new CustomEvent('openDemoForm');
-        window.dispatchEvent(openFormEvent);
-      }, 800);
-    }
+  // Get Started now scrolls to the Features section instead of opening the demo form.
+  const scrollToFeatures = () => {
+    scrollToSection('features');
   };
 
   const navLinks = [
@@ -69,7 +61,7 @@ export default function Navbar() {
               </button>
             ))}
             <button 
-              onClick={scrollToDemo}
+              onClick={scrollToFeatures}
               className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
               Get Started
@@ -103,7 +95,7 @@ export default function Navbar() {
             ))}
             <div className="px-4 mt-4">
               <button 
-                onClick={scrollToDemo}
+                onClick={scrollToFeatures}
                 className="w-full bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-3 rounded-lg font-semibold"
               >
                 Get Started
