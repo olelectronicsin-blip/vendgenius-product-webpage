@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -25,9 +25,6 @@ export default function Footer() {
             <div className="flex gap-3">
               <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="Twitter">
-                <Twitter className="w-5 h-5" />
               </a>
               <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
