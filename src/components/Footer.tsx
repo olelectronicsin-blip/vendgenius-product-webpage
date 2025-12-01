@@ -1,7 +1,10 @@
 import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { useState } from 'react';
+import ContactCard from './ContactCard';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const [isContactCardOpen, setIsContactCardOpen] = useState(false);
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -97,7 +100,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               Advanced IoT solutions for modern vending automation and smart business technology.
             </p>
-            <button className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
+            <button onClick={() => setIsContactCardOpen(true)} className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
               Partner With Us
             </button>
           </div>
@@ -117,6 +120,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* Contact Card Modal from Footer */}
+      <ContactCard isOpen={isContactCardOpen} onClose={() => setIsContactCardOpen(false)} />
     </footer>
   );
 }
