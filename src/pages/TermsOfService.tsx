@@ -1,7 +1,7 @@
 import LegalLayout from '../components/LegalLayout';
 
 export default function TermsOfService() {
-  const lastUpdated = 'Nov 28, 2025';
+  const lastUpdated = 'Jan 6, 2026';
 
   return (
     <LegalLayout
