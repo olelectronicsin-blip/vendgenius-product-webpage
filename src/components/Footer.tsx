@@ -116,8 +116,20 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} VendGenius. All rights reserved.
+            <p className="text-gray-500 text-sm flex items-center gap-1 flex-wrap">
+              <span>&copy; {new Date().getFullYear()} VendGenius. All rights reserved.</span>
+              <span className="hidden md:inline">|</span>
+              <span className="flex items-center gap-1">
+                Developed by{' '}
+                <a
+                  href="https://www.byteflowdigiai.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-gray-300 hover:text-teal-400 transition-colors"
+                >
+                  ByteFlow DigiAI
+                </a>
+              </span>
             </p>
             <div className="flex gap-6 text-sm text-gray-500">
               <Link to="/privacy-policy" className="hover:text-teal-400 transition-colors">Privacy Policy</Link>
