@@ -1,10 +1,7 @@
 import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react';
-import { useState } from 'react';
-import ContactCard from './ContactCard';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
-  const [isContactCardOpen, setIsContactCardOpen] = useState(false);
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -15,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -92,25 +89,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Powered By */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Powered By</h4>
-            <a
-              href="https://olatus.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-teal-400 font-semibold text-xl mb-2 inline-block hover:text-teal-300 transition-colors"
-            >
-              OLatus
-            </a>
-            <p className="text-gray-400 mb-4">
-              Advanced IoT solutions for modern vending automation and smart business technology.
-            </p>
-            <button onClick={() => setIsContactCardOpen(true)} className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105">
-              Partner With Us
-            </button>
-          </div>
         </div>
 
         {/* Bottom Bar */}
@@ -139,8 +117,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      {/* Contact Card Modal from Footer */}
-      <ContactCard isOpen={isContactCardOpen} onClose={() => setIsContactCardOpen(false)} />
     </footer>
   );
 }
