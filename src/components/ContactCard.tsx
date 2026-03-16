@@ -23,11 +23,11 @@ export default function ContactCard({ isOpen, onClose }: ContactCardProps) {
   if (!isOpen) return null;
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/919864220960', '_blank');
+    window.open('https://wa.me/916900105606', '_blank');
   };
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:olelectronics.in@gmail.com';
+    window.location.href = 'mailto:connect@vendgenius.in';
   };
 
   return (
@@ -68,7 +68,7 @@ export default function ContactCard({ isOpen, onClose }: ContactCardProps) {
             </div>
             <div className="flex-1 text-left">
               <div className="font-bold text-gray-900 text-lg">WhatsApp</div>
-              <div className="text-gray-600 text-sm">+91 9864220960</div>
+              <div className="text-gray-600 text-sm">+91 6900105606</div>
             </div>
             <div className="text-gray-400 group-hover:text-green-500 transition-colors">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -87,7 +87,7 @@ export default function ContactCard({ isOpen, onClose }: ContactCardProps) {
             </div>
             <div className="flex-1 text-left">
               <div className="font-bold text-gray-900 text-lg">Email</div>
-              <div className="text-gray-600 text-sm">olelectronics.in@gmail.com</div>
+              <div className="text-gray-600 text-sm">connect@vendgenius.in</div>
             </div>
             <div className="text-gray-400 group-hover:text-teal-500 transition-colors">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

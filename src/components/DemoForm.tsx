@@ -53,7 +53,7 @@ export default function DemoForm({ isOpen, onClose }: DemoFormProps) {
           company: formData.company || 'Not provided',
           location: formData.location,
           message: formData.message || 'No additional message',
-          to_email: 'olelectronics.in@gmail.com'
+          to_email: 'connect@vendgenius.in'
         }),
       });
 

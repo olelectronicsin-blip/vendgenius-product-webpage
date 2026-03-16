@@ -47,7 +47,7 @@ export default function CTA() {
               </div>
               <div className="text-left">
                 <div className="text-sm text-teal-100">Call Us</div>
-                <div className="font-semibold">+91 9864220960</div>
+                <div className="font-semibold">+91 6900105606</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -56,7 +56,7 @@ export default function CTA() {
               </div>
               <div className="text-left">
                 <div className="text-sm text-teal-100">Email Us</div>
-                <div className="font-semibold">olelectronics.in@gmail.com</div>
+                <div className="font-semibold">connect@vendgenius.in</div>
               </div>
             </div>
           </div>

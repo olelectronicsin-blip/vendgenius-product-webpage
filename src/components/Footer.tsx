@@ -73,14 +73,14 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0 text-teal-400" />
-                <a href="mailto:olelectronics.in@gmail.com" className="hover:text-teal-400 transition-colors">
-                  olelectronics.in@gmail.com
+                <a href="mailto:connect@vendgenius.in" className="hover:text-teal-400 transition-colors">
+                  connect@vendgenius.in
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0 text-teal-400" />
-                <a href="tel:+919864220960" className="hover:text-teal-400 transition-colors">
-                  +91 9864220960
+                <a href="tel:+916900105606" className="hover:text-teal-400 transition-colors">
+                  +91 6900105606
                 </a>
               </li>
               <li className="flex items-start gap-2">

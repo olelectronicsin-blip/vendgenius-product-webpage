@@ -63,8 +63,8 @@ export default function CookiePolicy() {
       <section id="contact" className="bg-white border-2 border-gray-100 rounded-2xl p-6">
         <h2 className="text-xl font-bold text-gray-900">Contact</h2>
         <p>
-          Email: <a className="text-teal-700 font-semibold" href="mailto:olelectronics.in@gmail.com">olelectronics.in@gmail.com</a>
-          <br />Phone: <a className="text-teal-700 font-semibold" href="tel:+919864220960">+91 9864220960</a>
+          Email: <a className="text-teal-700 font-semibold" href="mailto:connect@vendgenius.in">connect@vendgenius.in</a>
+          <br />Phone: <a className="text-teal-700 font-semibold" href="tel:+916900105606">+91 6900105606</a>
         </p>
       </section>
     </LegalLayout>
