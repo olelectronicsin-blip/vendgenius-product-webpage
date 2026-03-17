@@ -35,9 +35,13 @@ export default function CTA() {
               Request a Demo
               <ArrowRight className="w-5 h-5" />
             </button>
-            <button className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
+            <a
+              href="/VENDGENIUS-BROCHURE-LATEST.pdf"
+              download="VendGenius-Brochure.pdf"
+              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all duration-300 flex items-center gap-2"
+            >
               Download Brochure
-            </button>
+            </a>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8 border-t border-white/20">
