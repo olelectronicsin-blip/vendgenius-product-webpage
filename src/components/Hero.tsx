@@ -56,12 +56,13 @@ export default function Hero() {
                 Request a Demo
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button 
-                onClick={scrollToFeatures}
-                className="bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg border-2 border-gray-200 hover:border-teal-600 hover:shadow-lg transition-all duration-300"
+              <a 
+                href="/VENDGENIUS-BROCHURE-LATEST.pdf"
+                download
+                className="bg-white text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg border-2 border-gray-200 hover:border-teal-600 hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"
               >
-                Get Started
-              </button>
+                Download Brochure
+              </a>
             </div>
 
             <div className="flex flex-wrap gap-3 sm:gap-4 justify-center lg:justify-start pt-2 sm:pt-4">

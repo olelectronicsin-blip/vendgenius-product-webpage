@@ -21,9 +21,12 @@ export default function Navbar() {
     }
   };
 
-  // Get Started now scrolls to the Features section instead of opening the demo form.
-  const scrollToFeatures = () => {
-    scrollToSection('features');
+  // Download Brochure
+  const downloadBrochure = () => {
+    const link = document.createElement('a');
+    link.href = '/VENDGENIUS-BROCHURE-LATEST.pdf';
+    link.download = 'VENDGENIUS-BROCHURE-LATEST.pdf';
+    link.click();
   };
 
   const navLinks = [
@@ -60,12 +63,13 @@ export default function Navbar() {
                 {link.name}
               </button>
             ))}
-            <button 
-              onClick={scrollToFeatures}
+            <a 
+              href="/VENDGENIUS-BROCHURE-LATEST.pdf"
+              download
               className="bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
             >
-              Get Started
-            </button>
+              Download Brochure
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,12 +98,13 @@ export default function Navbar() {
               </button>
             ))}
             <div className="px-4 mt-4">
-              <button 
-                onClick={scrollToFeatures}
-                className="w-full bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-3 rounded-lg font-semibold"
+              <a 
+                href="/VENDGENIUS-BROCHURE-LATEST.pdf"
+                download
+                className="w-full block text-center bg-gradient-to-r from-teal-600 to-green-600 text-white px-6 py-3 rounded-lg font-semibold"
               >
-                Get Started
-              </button>
+                Download Brochure
+              </a>
             </div>
           </div>
         )}

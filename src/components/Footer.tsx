@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -23,14 +23,8 @@ export default function Footer() {
               Revolutionizing fresh juice delivery with IoT-enabled automation and patented technology.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="LinkedIn">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/people/VendGenius/100067025800737/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-lg hover:bg-teal-600 transition-colors" aria-label="Instagram">
-                <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
